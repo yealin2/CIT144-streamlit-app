@@ -10,7 +10,7 @@ def ai_ask(prompt, data=None, temperature=0.5, max_tokens=250, model="mistral-sm
         if "idToken" in globals():
             api_key = globals()["idToken"]
             api_url = "https://llm.boardflare.com"
-    else:
+    if api_key is None or api_url is None:
         return "Login on the Functions tab for limited demo usage, or sign up for a free Mistral AI account at https://console.mistral.ai/ and add your own api_key."
 
 
