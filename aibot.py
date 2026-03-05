@@ -60,6 +60,9 @@ def ai_ask(prompt, data=None, temperature=0.5, max_tokens=250, model="mistral-sm
 
 st.title("YerinSon_AIBot")
 
+with st.chat_message("assistant"):
+    st.image("DemoOverview.png", caption="CIT 144 – Demographics Data Visualization")
+
 # Initialize chat history​
 
 if "messages" not in st.session_state:
